@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/Image"
+            android:layout_width="200dp"
+            android:layout_height="231dp"
+            android:layout_below="@id/Name"
+            android:src="@drawable/teto_tetoris" />
+
+        <TextView
+            android:id="@+id/Info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/studentInfo" />
+
+        <TextView
+            android:id="@+id/MSSV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:layout_toRightOf="@id/Image"
+            android:text="MSSV: 31012102156"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/MSSV"
+            android:layout_toRightOf="@id/Image"
+            android:text="Họ tên: Đào Thịnh Khang"
+            android:textColor="@color/design_default_color_primary_dark" />
+
+        <TextView
+            android:id="@+id/DateOfBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Image"
+            android:layout_below="@id/Name"
+            android:text="Sinh ngày: 21/12/2003" />
+
+        <TextView
+            android:id="@+id/Gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Image"
+            android:layout_below="@id/DateOfBirth"
+            android:text="Giới tính: Nam" />
+
+        <TextView
+            android:id="@+id/Phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Gender"
+            android:layout_toRightOf="@id/Image"
+            android:text="Điện thoại: 0901395850"
+            android:textColor="@color/design_default_color_error" />
+
+        <TextView
+            android:id="@+id/Major"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Image"
+            android:layout_below="@id/Phone"
+            android:text="Khoa: Công nghệ thông tin" />
+
+        <TextView
+            android:id="@+id/Course"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Image"
+            android:layout_below="@id/Major"
+            android:text="Khoá học: 2021-2025" />
+
+        <TextView
+            android:id="@+id/Class"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Course"
+            android:layout_toRightOf="@id/Image"
+            android:text="Lớp: 21DAI"
+            android:textColor="@color/design_default_color_secondary"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
